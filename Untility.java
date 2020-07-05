@@ -24,3 +24,7 @@ public class Untility {
 	}
 
 }
+public static int readNumber(){
+	
+	System.out.println("My_tes_git")
+}
