@@ -5,7 +5,7 @@
 */
 
 import java.util.Scanner;
-public class Untility {
+public class Utility {
 	private static Scanner scanner = new Scanner(System.in);
 
 	/**
@@ -23,7 +23,6 @@ public class Untility {
 		}
 		return c;	
 		}
-	}
 
 	/**
 	
@@ -44,7 +43,7 @@ public class Untility {
 			}
 			catch (NumberFormatException e)
 			{
-				System.out.println("数字输入有误，请重新输入：")
+				System.out.println("数字输入有误，请重新输入：");
 			}
 		}
 		return n;
@@ -69,9 +68,9 @@ public class Untility {
 		char c;
 		for (; ; )
 		{
-			String str = readkeyBoard(1).toUpperCase();
+			String str = readKeyBoard(1).toUpperCase();
 			c = str.charAt(0);
-			if (c == 'Y' || c == "N")
+			if (c == 'Y' || c == 'N')
 			{
 				break;
 			}else{
@@ -98,7 +97,9 @@ public class Untility {
 				System.out.println("输入长度（不大于" + limit + ") 错误，请重新输入：" );
 				continue;
 			}
+			break;
 		}
 
 		return line;
 	}
+}
